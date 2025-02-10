@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
@@ -9,6 +9,11 @@ interface FormData {
 }
 
 export default function Login() {
+
+  useEffect(() => {
+    document.title = 'Login';
+  }, []);
+
   const [formData, setFormData] = useState<FormData>({
     email: '',
     password: '',

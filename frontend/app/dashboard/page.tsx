@@ -14,8 +14,9 @@ export default function Dashboard() {
   const [error, setError] = useState<string | null>(null);
   const API_URL = process.env.NEXT_PUBLIC_API_ENDPOINT ?? 'http://localhost:3001/api/v1';
   const router = useRouter();
-
+  
   useEffect(() => {
+    document.title = 'User Dashboard';
     const verifyToken = async () => {
       try {
         const token = localStorage.getItem('token');

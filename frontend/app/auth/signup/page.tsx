@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
@@ -15,6 +15,11 @@ export default function Signup() {
     email: '',
     password: '',
   });
+
+  useEffect(() => {
+    document.title = 'Sign Up';
+  }, []);
+
   const [errors, setErrors] = useState<string[]>([]);
   const API_URL = process.env.NEXT_PUBLIC_API_ENDPOINT ?? 'http://localhost:3001/api/v1';
   
