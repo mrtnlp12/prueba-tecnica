@@ -61,7 +61,7 @@ export default function Signup() {
           setErrors(['Something went wrong. Please try again.']);
         }
       }
-    } catch (err) {
+    } catch {
       setErrors(['An unexpected error occurred. Please try again later.']);
     }
   };

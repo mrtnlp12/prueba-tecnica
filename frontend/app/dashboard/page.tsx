@@ -36,7 +36,7 @@ export default function Dashboard() {
         }
 
         fetchUsers();
-      } catch (err) {
+      } catch {
         setError('An unexpected error occurred while verifying the token.');
         setLoading(false);
         return;
@@ -56,7 +56,7 @@ export default function Dashboard() {
           const { message } = await response.json();
           setError(message);
         }
-      } catch (err) {
+      } catch {
         setError('An unexpected error occurred while fetching users.');
       } finally {
         setLoading(false);

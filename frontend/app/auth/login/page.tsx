@@ -59,7 +59,7 @@ export default function Login() {
           setErrors([data.message]);
         }
       }
-    } catch (err) {
+    } catch {
       setErrors(['An unexpected error occurred. Please try again later.']);
     }
   };
