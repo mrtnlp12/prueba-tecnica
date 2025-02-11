@@ -26,7 +26,6 @@ Sistema web completo que implementa registro de usuarios, autenticación y un da
 1. **Clonar el repositorio**
    ```bash
    git clone git@github.com:mrtnlp12/prueba-tecnica.git
-   cd prueba-tecnica
    ```
 
 2. Navegar a la carpeta `prueba-tecnica`
