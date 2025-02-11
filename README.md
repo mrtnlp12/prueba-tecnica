@@ -41,7 +41,7 @@ Sistema web completo que implementa registro de usuarios, autenticación y un da
    MONGODB_URI=mongodb://mongodb:27017/auth
    ```
 
-3. Iniciar la aplicación**
+3. Iniciar la aplicación
    ```bash
    docker compose up --build -d
    ```
